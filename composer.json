@@ -1,0 +1,6 @@
+{
+    "name": "cordoval/bc-analyzer",
+    "autoload-dev": {
+        "phpunit/phpunit": "~4.0.1"
+    }
+}
