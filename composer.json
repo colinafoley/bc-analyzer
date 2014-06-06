@@ -1,12 +1,24 @@
 {
     "name": "cordoval/bc-analyzer",
-    "autoload-dev": {
+    "type": "tool",
+    "description": "BC Analyzer",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.5"
+    },
+    "require-dev": {
         "phpspec/phpspec": "~2.0.0"
     },
+    "bin": [
+        "bin/gush"
+    ],
     "config": {
         "bin-dir": "bin"
     },
     "autoload": {
-        "psr-0": {"Cordoval": "src"}
+        "psr-0": {"Cordoval\\": "src"}
+    },
+    "autoload-dev": {
+        "psr-0": {"Cordoval\\Spec": "spec"}
     }
 }
