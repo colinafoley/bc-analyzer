@@ -8,28 +8,28 @@ You can see the slides [here](https://speakerdeck.com/cordoval/symfony-component
 
 BC package analyzer
 
-Architecture
+## Architecture
 
-Scanner:
+### Scanner:
 
   will scan files from autoload list
 
-Drill:
+### Drill:
   
   will drill the tree of extension and implementation
 
-Parser:
+### Parser:
 
   will parse annotated tags
 
-Configurator:
+### Configurator:
 
   will configure the rules for BC
   
-Resolver:
+### Resolver:
 
   use rules to resolve violation
 
-Reporter:
+### Reporter:
 
   will report violations of BC rules
