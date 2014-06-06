@@ -1,0 +1,11 @@
+bldr:
+    profiles:
+        default:
+            description: 'Development Profile'
+            tasks:
+                - testDev
+        watch:
+            description: "Watch Profile"
+            tasks:
+                - testDev
+                - watch

@@ -1,6 +1,12 @@
 {
     "name": "cordoval/bc-analyzer",
     "autoload-dev": {
-        "phpunit/phpunit": "~4.0.1"
+        "phpspec/phpspec": "~2.0.0"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-0": {"Cordoval": "src"}
     }
 }

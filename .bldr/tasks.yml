@@ -1,0 +1,31 @@
+bldr:
+    tasks:
+        watch:
+            calls:
+                -
+                    type: watch
+                    task: test
+                    src:
+                        - { path: [src, spec], files: *.php, recursive: true }
+        test:
+            description: 'Runs the PHPSpec Tests'
+            calls:
+                -
+                    type: exec
+                    executable: clear
+                -
+                    type: exec
+                    failOnError: true
+                    executable: php
+                    arguments:
+                        - bin/phpspec
+                        - run
+        testDev:
+            description: 'Runs the PHPSpec Tests'
+            calls:
+
+                -
+                    type: exec
+                    failOnError: false
+                    executable: php
+                    arguments: [bin/phpspec]

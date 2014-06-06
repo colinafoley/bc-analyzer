@@ -1,0 +1,10 @@
+imports:
+    - { resource: .bldr/profiles.yml }
+    - { resource: .bldr/tasks.yml }
+
+bldr:
+    name: cordoval/bc-analyzer
+    description: The Backwards Compatibility Analyzer
+
+#blocks:
+#    - Bldr\Block\Watch\WatchBlock
