@@ -17,4 +17,14 @@ Parser:
 
   will parse annotated tags
 
+Configurator:
 
+  will configure the rules for BC
+  
+Resolver:
+
+  use rules to resolve violation
+
+Reporter:
+
+  will report violations of BC rules
